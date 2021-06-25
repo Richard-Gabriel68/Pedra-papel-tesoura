@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedra, papel e tesoura</title>
+</head>
+<body>
+    
+    <header></header>
+
+    <main>
+        <div class="cards">
+            <section class="bot-cards">
+                <div class="card b pe">Pedra</div>
+                <div class="card b pa">Papel</div>
+                <div class="card b te">Tesoura</div>
+            </section>
+    
+            <section class="player-cards">
+                <div class="card" onclick="start(1)" >Pedra</div>
+                <div class="card" onclick="start(2)" >Papel</div>
+                <div class="card" onclick="start(3)" >Tesoura</div>
+            </section>
+
+            <section class="info">
+                <div class="pontos"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
