@@ -3,9 +3,14 @@
     padding:0;
     margin:0;
 }
+body main 
+{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
 body main .cards
 {
-    font-family: Arial, Helvetica, sans-serif;
+    
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
@@ -50,5 +55,38 @@ main .player-cards .card
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: bold;
+}
+main aside
+{
+    margin-top: 3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main aside h2
+{
+    text-align: center;
+    font-size: 40px;
+}
+main aside .scoreBot
+{
+    width: 60%;
+    line-height: 3rem;
+    border-radius: 10px;
+    background-color: lightcoral;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+main aside .scorePlayer
+{
+    width: 60%;
+    line-height: 3rem;
+    border-radius: 10px;
+    background-color: rgb(223, 240, 128);
+    margin: 1rem 0;
+    text-align: center;
     font-weight: bold;
 }
