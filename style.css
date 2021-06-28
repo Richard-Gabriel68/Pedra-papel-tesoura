@@ -35,6 +35,8 @@ main .bot-cards .card
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    transform-style: preserve-3d;
+    transition: all ease 0.5s
 }
 main .player-cards
 {
@@ -88,5 +90,18 @@ main aside .scorePlayer
     background-color: rgb(223, 240, 128);
     margin: 1rem 0;
     text-align: center;
+    font-weight: bold;
+}
+main aside .decision
+{
+    width: 60%;
+    margin: 1rem 0;
+    background-color: thistle;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
     font-weight: bold;
 }

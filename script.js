@@ -5,6 +5,7 @@ function start(n)
     let tesoura = document.querySelector('te');
     let scoreBot = document.querySelector('.scoreBot');
     let scorePlayer = document.querySelector('.scorePlayer');
+    let decision = document.querySelector('.decision');
     let lista = [pedra, papel, tesoura];
     let rival = lista[Math.floor(Math.random() * lista.length)];
     let pontosB = 0;
@@ -15,21 +16,21 @@ function start(n)
         switch (rival)
         {
             case pedra:
-                console.log('Empate!');
+                decision.innerHTML = 'Empate';
                 pontosB++;
                 pontosP++;
-                scoreBot.innerHTML = `Pontuação da Maqinha: ${pontosB}`;
-                scorePlayer.innerHTML = `Sua pontuação: ${pontosP}`;
+                scoreBot.innerHTML += '  |  ';
+                scorePlayer.innerHTML += '  |  ';
             break;
             case papel:
-                console.log('Perdeu!');
+                decision.innerHTML = 'Perdeu!';
                 pontosB++;
-                scoreBot.innerHTML = `Pontuação da Maqinha: ${pontosB}`;
+                scoreBot.innerHTML += '  |  ';
             break;
             case tesoura:
-                console.log('Ganhou!!');
+                decision.innerHTML = 'Ganhou!';
                 pontosP++;
-                scorePlayer.innerHTML = `Sua pontuação: ${pontosP}`;
+                scorePlayer.innerHTML += '  |  ';
             break;
         }
 
@@ -39,21 +40,21 @@ function start(n)
         switch (rival)
         {
             case pedra:
-                console.log('Ganhou!');
+                decision.innerHTML = 'Ganhou!';
                 pontosP++;
-                scorePlayer.innerHTML = `Sua pontuação: ${pontosP}`;
+                scorePlayer.innerHTML += '  |  ';
             break;
             case papel:
-                console.log('empate');
+                decision.innerHTML = 'Empate';
                 pontosB++;
                 pontosP++;
-                scoreBot.innerHTML = `Pontuação da Maqinha: ${pontosB}`;
-                scorePlayer.innerHTML = `Sua pontuação: ${pontosP}`;
+                scoreBot.innerHTML += '  |  ';
+                scorePlayer.innerHTML += '  |  ';
             break;
             case tesoura:
-                console.log('Perdeu!');
+                decision.innerHTML = 'Perdeu!';
                 pontosB++;
-                scoreBot.innerHTML = `Pontuação da Maqinha: ${pontosB}`;
+                scoreBot.innerHTML += '  |  ';
             break;
         }
     }
@@ -62,21 +63,21 @@ function start(n)
         switch (rival)
         {
             case pedra:
-                console.log('Perdeu!');
+                decision.innerHTML = 'Perdeu!';
                 pontosB++;
-                scoreBot.innerHTML = `Pontuação da Maqinha: ${pontosB}`;
+                scoreBot.innerHTML += '  |  ';
             break;
             case papel:
-                console.log('Ganhou!');
+                decision.innerHTML = 'Ganhou!';
                 pontosP++;
-                scorePlayer.innerHTML = `Sua pontuação: ${pontosP}`;
+                scorePlayer.innerHTML += '  |  ';
             break;
             case tesoura:
-                console.log('Empate!');
+                decision.innerHTML = 'Empate';
                 pontosB++;
                 pontosP++;
-                scoreBot.innerHTML = `Pontuação da Maqinha: ${pontosB}`;
-                scorePlayer.innerHTML = `Sua pontuação: ${pontosP}`;
+                scoreBot.innerHTML += '  |  ';
+                scorePlayer.innerHTML += '  |  ';
             break;
         }
     }
