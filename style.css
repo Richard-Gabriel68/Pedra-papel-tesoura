@@ -3,10 +3,14 @@
     padding:0;
     margin:0;
 }
+body
+{
+    background-image: linear-gradient(90deg, #6b0404, #8b1515, #6b0404);
+}
 body main 
 {
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 body main .cards
 {
@@ -24,12 +28,17 @@ main .bot-cards
     height: 230px;
     margin-top: 1rem;
 }
+.girar
+{
+    transform: rotateY(180deg);
+}
 main .bot-cards .card
 {
     height: 100%;
     background-color: khaki;
     border-radius: 15px;
     border: 5px solid #40ffb6;
+    box-shadow: 5px 5px 10px #000;
 
     display: flex;
     align-items: center;
@@ -53,6 +62,7 @@ main .player-cards .card
     background-color: rgb(158, 140, 240);
     border-radius: 15px;
     border: 5px solid #40ffb6;
+    box-shadow: 5px 5px 10px #000;
 
     display: flex;
     align-items: center;
@@ -77,7 +87,7 @@ main aside .scoreBot
     width: 60%;
     line-height: 3rem;
     border-radius: 10px;
-    background-color: lightcoral;
+    background-color: rgb(240, 232, 128);
     margin: 1rem 0;
     text-align: center;
     font-weight: bold;
@@ -87,7 +97,7 @@ main aside .scorePlayer
     width: 60%;
     line-height: 3rem;
     border-radius: 10px;
-    background-color: rgb(223, 240, 128);
+    background-color: rgb(167, 128, 240);
     margin: 1rem 0;
     text-align: center;
     font-weight: bold;
