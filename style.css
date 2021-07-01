@@ -11,6 +11,7 @@ body main
 {
     display: flex;
     font-family: 'Rubik', sans-serif;
+    width: auto;
 }
 body main .cards
 {
@@ -114,4 +115,64 @@ main aside .decision
     justify-content: center;
     font-size: 40px;
     font-weight: bold;
+}
+
+/*RESPONSIVE -----------------------*/
+
+@media (max-width:500px)
+{
+    body
+    {
+        width: 100vw;
+    }
+    body main
+    {
+        flex-direction: column-reverse;
+        width: 100vw;
+        margin: auto;
+        align-items: center;
+        
+    }
+    body main .cards
+    {
+        width:100vw;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    main .bot-cards
+    {
+        height: 20vh;
+        width: 90vw;
+    }
+    main .player-cards
+    {
+        height: 20vh;
+        width: 90vw;
+    }
+    main aside
+    {
+        margin-top: 0.5rem;
+        width: 90vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 15px;
+    }
+    main aside .scoreBot
+    {
+        width: 80vw;
+    }
+    main aside .scorePlayer
+    {   
+        width:80vw;
+    }
+    main aside .decision
+    {
+        width:80vw;
+        height: 45px;
+    }
+
+
 }
