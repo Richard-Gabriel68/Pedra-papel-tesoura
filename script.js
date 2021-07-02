@@ -18,7 +18,7 @@ function start(n)
         switch (rival)
         {
             case pedra:
-                document.querySelector('.pe').style.color = "black";
+                document.querySelector('.pe').style.display = "block";
                 decision.innerHTML = 'Empate';
                 pontosB++;
                 pontosP++;
@@ -26,32 +26,32 @@ function start(n)
                 scorePlayer.innerHTML = `Você: ${pontosP}`;
             break;
             case papel:
-                document.querySelector('.pa').style.color = "black";
+                document.querySelector('.pa').style.display = "block";
                 decision.innerHTML = 'Perdeu!';
                 pontosB++;
                 scoreBot.innerHTML = `Maquina: ${pontosB}`;
             break;
             case tesoura:
-                document.querySelector('.te').style.color = "black";
+                document.querySelector('.te').style.display = "block";
                 decision.innerHTML = 'Ganhou!';
                 pontosP++;
                 scorePlayer.innerHTML = `Você: ${pontosP}`;
             break;
         }
-        setTimeout(clean, 1200);
+        setTimeout(clean, 1400);
     } 
     else if (n === 2) //Papel
     {
         switch (rival)
         {
             case pedra:
-                document.querySelector('.pe').style.color = "black";
+                document.querySelector('.pe').style.display = "block";
                 decision.innerHTML = 'Ganhou!';
                 pontosP++;
                 scorePlayer.innerHTML = `Você: ${pontosP}`;
             break;
             case papel:
-                document.querySelector('.pa').style.color = "black";
+                document.querySelector('.pa').style.display = "block";
                 decision.innerHTML = 'Empate';
                 pontosB++;
                 pontosP++;
@@ -59,32 +59,32 @@ function start(n)
                 scorePlayer.innerHTML = `Você: ${pontosP}`;
             break;
             case tesoura:
-                document.querySelector('.te').style.color = "black";
+                document.querySelector('.te').style.display = "block";
                 decision.innerHTML = 'Perdeu!';
                 pontosB++;
                 scoreBot.innerHTML = `Maquina: ${pontosB}`;
             break;
         }
-        setTimeout(clean, 1200);
+        setTimeout(clean, 1400);
     }
     else if (n === 3) //Tesoura
     {
         switch (rival)
         {
             case pedra:
-                document.querySelector('.pe').style.color = "black";
+                document.querySelector('.pe').style.display = "block";
                 decision.innerHTML = 'Perdeu!';
                 pontosB++;
                 scoreBot.innerHTML = `Maquina: ${pontosB}`;
             break;
             case papel:
-                document.querySelector('.pa').style.color = "black";
+                document.querySelector('.pa').style.display = "block";
                 decision.innerHTML = 'Ganhou!';
                 pontosP++;
                 scorePlayer.innerHTML = `Você: ${pontosP}`;
             break;
             case tesoura:
-                document.querySelector('.te').style.color = "black";
+                document.querySelector('.te').style.display = "block";
                 decision.innerHTML = 'Empate';
                 pontosB++;
                 pontosP++;
@@ -92,13 +92,13 @@ function start(n)
                 scorePlayer.innerHTML = `Você: ${pontosP}`;
             break;
         }
-        setTimeout(clean, 1200);
+        setTimeout(clean, 1400);
     }
 
 }
 
 function clean (){
-    document.querySelector('.pe').style.color = 'transparent';
-    document.querySelector('.pa').style.color = 'transparent';
-    document.querySelector('.te').style.color = 'transparent';
+    document.querySelector('.pe').style.display = 'none';
+    document.querySelector('.pa').style.display = 'none';
+    document.querySelector('.te').style.display = 'none';
 }

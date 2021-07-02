@@ -22,9 +22,10 @@ body main .cards
 }
 main .bot-cards
 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
     width:45vw;
     height: 230px;
     margin-top: 1rem;
@@ -36,19 +37,8 @@ main .bot-cards
 }
 main .bot-cards .card
 {
-    height: 100%;
-    background-color: khaki;
-    border-radius: 15px;
-    border: 5px solid #40ffb6;
-    box-shadow: 5px 5px 10px #000;
-    color: transparent;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    transform-style: preserve-3d;
-    transition: all ease 0.5s
+    display: none;
+    font-size: 40px;
 }
 main .player-cards
 {
