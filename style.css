@@ -30,15 +30,14 @@ main .bot-cards
     height: 230px;
     margin-top: 1rem;
     font-size: 30px;
+    transition: all ease 0.5s;
 }
-.girar
-{
-    transform: rotateY(180deg);
-}
+
 main .bot-cards .card
 {
     display: none;
     font-size: 40px;
+    transition: all ease 0.5s;
 }
 main .player-cards
 {

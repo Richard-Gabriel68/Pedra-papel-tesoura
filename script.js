@@ -12,7 +12,7 @@ function start(n)
     let lista = [pedra, papel, tesoura];
     let rival = lista[Math.floor(Math.random() * lista.length)];
     
-
+    
     if (n === 1) //Pedra
     {
         switch (rival)
@@ -20,8 +20,6 @@ function start(n)
             case pedra:
                 document.querySelector('.pe').style.display = "block";
                 decision.innerHTML = 'Empate';
-                pontosB++;
-                pontosP++;
                 scoreBot.innerHTML = `Maquina: ${pontosB}`;
                 scorePlayer.innerHTML = `Você: ${pontosP}`;
             break;
@@ -53,8 +51,6 @@ function start(n)
             case papel:
                 document.querySelector('.pa').style.display = "block";
                 decision.innerHTML = 'Empate';
-                pontosB++;
-                pontosP++;
                 scoreBot.innerHTML = `Maquina: ${pontosB}`;
                 scorePlayer.innerHTML = `Você: ${pontosP}`;
             break;
@@ -86,8 +82,6 @@ function start(n)
             case tesoura:
                 document.querySelector('.te').style.display = "block";
                 decision.innerHTML = 'Empate';
-                pontosB++;
-                pontosP++;
                 scoreBot.innerHTML = `Maquina: ${pontosB}`;
                 scorePlayer.innerHTML = `Você: ${pontosP}`;
             break;
